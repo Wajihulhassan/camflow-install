@@ -136,7 +136,7 @@ prepare_provenance:
 	cd ./build/libprovenance && git checkout tags/${lib-version}
 	cd ./build/libprovenance && $(MAKE) prepare
 
-prepare_ifc:
+     prepare_ifc:
 	mkdir -p build
 	@echo "Downloading ifc library ${ifc-version} ..."
 	cd ./build && git clone https://github.com/camflow/camflow-ifc-lib.git
@@ -167,7 +167,7 @@ prepare_service:
 prepare_lsm:
 	mkdir -p build
 	@echo "Downloading LSM patches..."
-	cd ./build && git clone https://github.com/camflow/camflow-patches.git
+	cd ./build && git clone https://github.com/Wajihulhassan/camflow-patches.git
 	cd ./build/camflow-patches/${lsm-version} && $(MAKE) prepare
 
 config:
